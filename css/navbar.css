@@ -1,20 +1,25 @@
 .navbar {
     background-color: steelblue;
     padding: 0.5rem 1rem;
-    min-height: 0.4rem;
-    
+    /*min-height: 0.4rem;*/
 }
 
 .navbar-item-box {
+    margin: 0 auto;
     display: flex;
     box-sizing: border-box;
     list-style: none;
-    align-items: center;
     flex-direction: row;
-    margin-bottom: 0px;
+    padding: 0;
 }
 
 .navbar-item {
     display: block;
-    padding: 0.5rem 1rem;
+    padding: 10px;
+    float: left;
+}
+
+#callout {
+    text-align: center;
+    padding-top: 1rem;
 }
