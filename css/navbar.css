@@ -43,6 +43,10 @@ body {
 
 }
 
+.firstP {
+    color: white;
+}
+
 .fadeIn {
     animation: fadeIn ease 3s;
 }
