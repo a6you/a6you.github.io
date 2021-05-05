@@ -1,10 +1,7 @@
-body {
-    padding-left: 25%;
-    padding-right: 25%;
-}
-
 .navbar {
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
+    width: 100%;
+    background-color: lightblue;
 }
 
 .navbar-item-box {
@@ -25,16 +22,17 @@ body {
     /*margin-bottom: 4rem;*/
 }
 
-.navbar-item:hover {
+/*.navbar-item:hover {
     background-color: #007bff;
     color: white;
-}
+}*/
 
 #callout {
     text-align: center;
     /*margin-bottom: 1.5rem;*/
     padding-left: 0%;
     padding-right: 0%;
+    margin-top: 1rem;
 }
 
 #profile {
@@ -43,40 +41,43 @@ body {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5rem;
     margin-bottom: 1rem;
-    animation: profile-move 3s linear 1;
+    margin-top: 1rem;
+    /*animation: profile-move 3s linear 1;*/
 
 }
 
-.firstP {
-    color: white;
-}
-
-.fadeIn {
+.fade-in {
     animation: fadeIn ease 3s;
 }
 
-.fadeInBody {
+.fade-in-body {
     animation: fadeIn ease 4s;
 }
 
-@keyframes profile-move {
-    0% {
-        left: -95%;
-        animation-timing-function: cubic-bezier(0.3, 0.001, 0.1, 1);
-    }
+.main-box {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
 
-    50% {
-        left: 0;
-        transform: rotate(360deg);
-        animation-timing-function: cubic-bezier(0.3, 0.001, 0.1, 1);
-    }
+.big-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    column-gap: 25px;
+    margin: auto;
+}
 
-    100% {
-        left: 0;
-        transform: rotate(360deg);
-    }
+.box {
+    width: 100%;
+    height: auto;
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightcoral;
+    padding: 0.5em;
+    margin: 5px 0px;
 }
 
 @keyframes fadeIn {
@@ -86,5 +87,11 @@ body {
     100% {
         animation-delay: 2s;
         opacity: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .navbar {
+        display: none;
     }
 }
