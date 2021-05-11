@@ -1,4 +1,4 @@
-# personal-profile
+# My Personal Portfolio
 
 Welcome to my personal profile webpage's README! Here I'll post updates on progress and things I've learned along the way.
 
